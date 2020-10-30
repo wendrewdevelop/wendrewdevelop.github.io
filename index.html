@@ -12,19 +12,23 @@
 
     </head>
     <body>
-        <div id="terminal-include"></div>
+        <html-include src="includes/terminal-include.html"></html-include>
         
         
-        <!--script src="assets/js/main.js"></script-->
+        <script src="assets/js/includes.min.js"></script>
         <script>
             var dt = new Date();
             document.getElementById("datetime").innerHTML = dt.toLocaleString();
 
-            $(function(){
-                $('[id$="-include"]').each(function (e){
-                    $(this).load("includes\\" + $(this).attr("id").replace("-include", "") +  ".html");
-                });
-            });
+            if ('registerElement' in document
+                && 'createShadowRoot' in HTMLElement.prototype
+                && 'import' in document.createElement('link')
+                && 'content' in document.createElement('template')) {
+                // We're using a browser with native WC support!
+            } else {
+                document.write('<script src="https:\/\/cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/0.7.5/webcomponents.min.js"><\/script>')
+            }
+
         </script>
     </body>
 </html>
