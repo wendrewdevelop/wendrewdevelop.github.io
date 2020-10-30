@@ -12,8 +12,9 @@
 
     </head>
     <body>
-        <html-include src="includes/terminal-include.html"></html-include>
-        
+        <?php
+            include 'includes/terminal-include.html';
+        ?>
         
         <script src="assets/js/includes.min.js"></script>
         <script>
