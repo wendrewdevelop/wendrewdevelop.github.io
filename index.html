@@ -12,7 +12,7 @@
 
     </head>
     <body>
-        <!--#include virtual="includes/terminal.html" --> 
+        <div id="terminal-include"></div>
         
         
         <!--script src="assets/js/main.js"></script-->
@@ -20,6 +20,11 @@
             var dt = new Date();
             document.getElementById("datetime").innerHTML = dt.toLocaleString();
 
+            $(function(){
+                $('[id$="-include"]').each(function (e){
+                    $(this).load("includes\\" + $(this).attr("id").replace("-include", "") +  ".html");
+                });
+            });
         </script>
     </body>
 </html>
