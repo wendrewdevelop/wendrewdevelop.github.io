@@ -1,29 +1,19 @@
-var firstNames = ["1337", "t0xic", "phantom", "ALPhA", "v1rus", "biTe", "krypt0", "cyb3r", "Bi0", "acid", "gh0st", "Lord", "r4dical"];
-var secondNames = ["PWNER", "H4X0R", "buRn", "MuX", "d3st0y3r", "phreak", "Plague", "0verride", "Chaos"];
-
-var hackerNameVisible = 0;
-
-document.onkeypress = function (e) {
-    e = e || window.event;
-    if (e.keyCode == 13) {
-      if (!hackerNameVisible) {
-        hackerNameVisible = 1;
-        var hackerName = getHackerName();
-        document.getElementById("window").getElementsByTagName("cursor1")[0].innerHTML = "";
-        document.getElementById("hackerName").innerHTML = hackerName;
-        document.getElementById("hackerName").style.opacity = 1;
-        document.getElementById("clear").style.opacity = 1;
-      } else {
-        hackerNameVisible = 0;
-        document.getElementById("hackerName").style.opacity = 0;
-        document.getElementById("clear").style.opacity = 0;
-        document.getElementById("window").getElementsByTagName("cursor1")[0].innerHTML = "_";
-      }
+// add class navbarDark on navbar scroll
+const header = document.querySelector('.navbar');
+console.log(header)
+window.onscroll = function() {
+    const top = window.scrollY;
+    if(top >=100) {
+        header.classList.add('navbarDark');
     }
-};
-
-function getHackerName() {
-	var firstName = firstNames[Math.floor(Math.random() * firstNames.length)];
-	var secondName = secondNames[Math.floor(Math.random() * secondNames.length)];
-	return firstName + " " + secondName;
+    else {
+        header.classList.remove('navbarDark');
+    }
 }
+// collapse navbar after click on small devices
+const navLinks = document.querySelectorAll('.nav-item')
+const menuToggle = document.getElementById('navbarSupportedContent')
+
+navLinks.forEach((l) => {
+    l.addEventListener('click', () => { new bootstrap.Collapse(menuToggle).toggle() })
+})
