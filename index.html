@@ -1,145 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Wendrew Oliveira</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- linking css file -->
-  <link rel="stylesheet" href="assets/css/main.css">
-  <!-- bootstrap CDN -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- font awesome -->
-  <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wendrew Oliveira</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700,400italic|Montserrat:400,700|Cardo:400italic|Advent+Pro:100' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
-
 <body>
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbarScroll">
+    
+    <!--- NAVIGATION --->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
-            <a class="navbar-brand" href="#" style="color: black;">Inicio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#home" style="color: black;">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about" style="color: black;">Sobre</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services" style="color: black;">Tecnologias</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact" style="color: black;">Contato</a>
-                    </li>
-                </ul>
-                
-            </div>
+        <div class="navbar-header">
+            <a class="navbar-brand scroll" href="#home">WENDREW</a>
         </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+            <li><a href="#home" class="scroll">HOME</a></li>
+            <li><a href="#about" class="scroll">ABOUT</a></li>
+            <li><a href="#portfolio" class="scroll">PORTFOLIO</a></li>
+            <li><a href="#contact" class="scroll">CONTACT</a></li>
+        </ul>
+        </div>
+    </div>
     </nav>
-    <!-- main banner -->
-    <section class="bgimage" id="home">
-        <div class="container-fluid">
-            <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
-                <h2 class="hero_title">Oi, bem-vindo</h2>
-                <p class="hero_desc">Me chamo Wendrew e sou engenheiro de software.</p>
-            </div>
-            </div>
+
+
+    <!----HOME --->
+    <div id="home" class="content-section">
+    <div class="bg">
+    <div class="container">
+        <div class="row">
+        
+        <div class="col-xs-12">
+            <h1>WENDREW OLIVEIRA</h1>
+            <h5>PORTFOLIO PESSOAL</h5>
         </div>
-    </section>
+        </div>
+    </div>
+        </div>
+    </div>
 
-    <!-- about section-->
-    <section id="about">
-        <div class="container mt-4 pt-4">
-            <h1 class="text-center">Sobre mim</h1>
-            <div class="row mt-4">
-
-                <div class="col-lg-12">
-                    <p>
-                        Me chamo Wendrew, tenho 26 anos. Atualmente, sou engenheiro de software em uma grande empresa brasileira no ramo de tecnologia.
-                    </p>
-                    <div class="row mt-3">
-                        <div class="col-md-6">
-                            <ul>
-                                <li>Nome: Wendrew Oliveira</li>
-                                <li>Idade: 26</li>
-                                <li>Cargo: Engenheiro de Software</li>
-                            </ul>
+    <!--- ABOUT --->
+    <div id="about" class="content-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-lg-12">
+                    <h1>SOBRE</h1>
+                    <!--- target="_blank" opens link in new window!-->
+                    <p><strong>#1:</strong> Sou desenvolvedor há quase 8 anos;</p>
+                    <p><strong>#2:</strong> Trabalhei em empresas renomadas no Brasil;</p>
+                    <p><strong>#3:</strong> Atualmente, sou um dos principais desenvolvedores da atual empresa em que trabalho;</p>
+                    <p><strong>#4:</strong> Sou formado em Analise e desenvolvimento de sistemas (ADS);</p>
+                    <p><strong>#5:</strong> Tenho conhecimento em integrações e utilização de serviços da AWS;</p>
+                    <p><strong>#6:</strong> Tenho conhecimento em deploy de aplicações em VPS e configuração de dominio pessoal;</p>
+                    <p><strong>#7:</strong> Trabalho com Python, frameworks Django, Flask e FastAPI, PostgreSQL, MySQL, MongoDB e REDIS;</p>
+                    <p><strong>#8:</strong> Para frontend, utilizo HTML, CSS, JS, frameworks Vue.js e Svelte;</p>
+                    <p><strong>#9:</strong> Conhecimento em desenvolvimento de API REST, aplicações fullstack e analise de dados.</p>
+                </div>
+                <div class="col-sm-12 col-lg-12 hidden-xs mt-4">
+                    <h1 class="text-center justify-content-center">PROGRESSO DE CONHECIMENTO</h1>
+                    <div class="row">
+                        <div class="col">
+                            <p style="width:90%" data-value="90" class="mt-2">Python</p>
+                            <progress max="100" value="90" class="html5">
+                                <!-- Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it. -->
+                                <div class="progress-bar">
+                                    <span style="width: 90%">90%</span>
+                                </div>
+                            </progress>
                         </div>
-                        <div class="col-md-6">
-                            <ul>
-                                <li>Estado: São Paulo</li>
-                                <li>Pais: Brasil</li>
-                                <li>Graduação: Analise e desenvolvimento de sistemas (ADS)</li>
-                            </ul>
+                        <div class="col">
+                            <p style="width:90%" data-value="90" class="mt-2">Django</p>
+                            <progress max="100" value="90" class="html5">
+                                <!-- Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it. -->
+                                <div class="progress-bar">
+                                    <span style="width: 90%">90%</span>
+                                </div>
+                            </progress>
+                        </div>
+                        <div class="col">
+                            <p style="width:70%" data-value="70" class="mt-2">Flask</p>
+                            <progress max="100" value="70" class="html5">
+                                <!-- Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it. -->
+                                <div class="progress-bar">
+                                    <span style="width: 70%">70%</span>
+                                </div>
+                            </progress>
+                        </div>
+                        <div class="col">
+                            <p style="width:50%" data-value="50" class="mt-2">FastAPI</p>
+                            <progress max="100" value="50" class="html5">
+                                <!-- Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it. -->
+                                <div class="progress-bar">
+                                    <span style="width: 50%">50%</span>
+                                </div>
+                            </progress>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p style="width:90%" data-value="90" class="mt-2">MySQL</p>
+                            <progress max="100" value="90" class="html5">
+                                <!-- Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it. -->
+                                <div class="progress-bar">
+                                    <span style="width: 90%">90%</span>
+                                </div>
+                            </progress>
+                        </div>
+                        <div class="col">
+                            <p style="width:90%" data-value="90" class="mt-2">PostgreSQL</p>
+                            <progress max="100" value="90" class="html5">
+                                <!-- Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it. -->
+                                <div class="progress-bar">
+                                    <span style="width: 90%">90%</span>
+                                </div>
+                            </progress>
+                        </div>
+                        <div class="col">
+                            <p style="width:50%" data-value="50" class="mt-2">REDIS</p>
+                            <progress max="100" value="50" class="html5">
+                                <!-- Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it. -->
+                                <div class="progress-bar">
+                                    <span style="width: 50%">50%</span>
+                                </div>
+                            </progress>
+                        </div>
+                        <div class="col">
+                            <p style="width:50%" data-value="50" class="mt-2">MongoDB</p>
+                            <progress max="100" value="50" class="html5">
+                                <!-- Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it. -->
+                                <div class="progress-bar">
+                                    <span style="width: 50%">50%</span>
+                                </div>
+                            </progress>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p style="width:90%" data-value="90" class="mt-2">HTML</p>
+                            <progress max="100" value="90" class="html5">
+                                <!-- Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it. -->
+                                <div class="progress-bar">
+                                    <span style="width: 90%">90%</span>
+                                </div>
+                            </progress>
+                        </div>
+                        <div class="col">
+                            <p style="width:90%" data-value="90" class="mt-2">JS</p>
+                            <progress max="100" value="90" class="html5">
+                                <!-- Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it. -->
+                                <div class="progress-bar">
+                                    <span style="width: 90%">90%</span>
+                                </div>
+                            </progress>
+                        </div>
+                        <div class="col">
+                            <p style="width:70%" data-value="70" class="mt-2">CSS</p>
+                            <progress max="100" value="70" class="html5">
+                                <!-- Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it. -->
+                                <div class="progress-bar">
+                                    <span style="width: 70%">70%</span>
+                                </div>
+                            </progress>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p style="width:50%" data-value="50" class="mt-2">Vue.js</p>
+                            <progress max="100" value="50" class="html5">
+                                <!-- Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it. -->
+                                <div class="progress-bar">
+                                    <span style="width: 50%">50%</span>
+                                </div>
+                            </progress>
+                        </div>
+                        <div class="col">
+                            <p style="width:50%" data-value="50" class="mt-2">Svelte</p>
+                            <progress max="100" value="50" class="html5">
+                                <!-- Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it. -->
+                                <div class="progress-bar">
+                                    <span style="width: 50%">50%</span>
+                                </div>
+                            </progress>
                         </div>
                     </div>
                 </div>
             </div>
-    </section>
+        </div>
+    </div>
 
-    <!-- services section-->
-    <section id="services">
+    <!--- PORTFOLIO --->
+    <div id="portfolio" class="content-section">
         <div class="container">
-            <h1 class="text-center mt-3">Tecnologias</h1>
             <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <h4 class="card-title mt-3">Websites</h4>
-                            <p class="card-text mt-3">
-                                Vasto conhecimento em desenvolvimento de websites corporativos,
-                                landing pages e sites constitucionais.
-                            </p>
-                        </div>
-                    </div>  
+                <div class="col-sm-12">
+                    <h1>PORTFOLIO</h1>
+                    <p class="lead">Trabalhos entregues <u>como freelancer</u>.</p>
                 </div>
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <h4 class="card-title mt-3">Scripts</h4>
-                            <p class="card-text mt-3">
-                                Conhecimento pratico em desenvolvimento de scripts para automatizações.
-                            </p>
+                <div class="col-sm-6 col-md-4">
+                    <a target="_blank" href="https://www.onithing.com.br/" class="text-center">
+                        <div class="thumbnail">
+                            <img src="assets/imgs/onithing.png" width="350px"/>
+                            <div class="caption">
+                                <h4>Website ONITHING</h4>
+                                <p>Vitrine de produtos</p>
+                            </div>
                         </div>
-                    </div>  
+                    </a>
                 </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <h4 class="card-title mt-3">AWS</h4>
-                            <p class="card-text mt-3">
-                                Conhecimento em diversos serviços da AWS como SES, SQS, SNS, CloudWatch,
-                                CloudFormation, Lambdas, etc...
-                            </p>
+                <div class="col-sm-6 col-md-4">
+                    <a target="_blank" href="https://app.metasolucoesambientais.com.br/" class="text-center">
+                        <div class="thumbnail">
+                            <img src="assets/imgs/metaapp.png" width="350px"/>
+                            <div class="caption">
+                                <h4>App Meta</h4>
+                                <p>Aplicativo web e mobile para armazenamento de documentos de clientes. Automatização do processo de cadastro, busca, download e notificação de contratos das fazendas.</p>
+                            </div>
                         </div>
-                    </div>  
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <a target="_blank" href="https://www.igastroprocto.com.br/" class="text-center">
+                        <div class="thumbnail">
+                            <img src="assets/imgs/igastro.png" width="350px"/>
+                            <div class="caption">
+                                <h4>Website iGastroProcto</h4>
+                                <p>Site desenvolvido quando trabalhei em uma agencia de publicidade. Produto feito para uma policlinica.</p>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <!-- footer section-->
-    <footer id="footer">
-        <div class="container-fluid">
-            <!-- social media icons -->
-            <div class="social-icons mt-4">
-                <a href="https://www.instagram.com/0xdrxw/" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://twitter.com/dreeeew_s" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.linkedin.com/in/wendrew-oliveira-31252411a/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/wendrewdevelop" target="_blank"><i class="fab fa-github"></i></a>
+    <!--- CONTACT --->
+    <div id="contact" class="content-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1>CONTATO</h1>
+                    <p class="lead">Me encontre por aqui:</p>
+                    <div class="social-cont">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <a class="btn btn-default btn-lg linkedin-btn" href="https://www.linkedin.com/in/wendrew-oliveira-31252411a/" role="button" target="_blank"><i class="fa fa-star"></i><span>LinkedIn</span></a>
+                                <a class="btn btn-default btn-lg twitter-btn" href="https://twitter.com/dreeeew_s" role="button" target="_blank"><i class="fa fa-twitter"></i><span>Twitter</span></a>
+                                <a class="btn btn-default btn-lg github-btn" href="https://github.com/wendrewdevelop" role="button" target="_blank"><i class="fa fa-github"></i><span>Github</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </footer>
+    </div>
 
-    <!-- load javascript after loading all html content -->
+
+
+    <!---FOOTER--->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="assets/js/main.js"></script>
-
-</body>
-
+  </body>
 </html>
